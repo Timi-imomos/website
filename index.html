@@ -91,7 +91,7 @@
   .nav-cv-btn:hover { opacity: 0.85; }
 
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,14 +112,11 @@
     pointer-events: none;
   }
 
-  .hero-text {
-    flex: 1;
-    max-width: 580px;
-  }
+  .hero-text { flex: 1; max-width: 620px; }
 
   .hero-portrait {
     width: 100%;
-    max-width: 340px;
+    max-width: 300px;
     height: auto;
     object-fit: contain;
     border: 1px solid var(--border);
@@ -133,61 +130,26 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-weight: 500;
   }
 
   .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
     font-weight: 400;
-    line-height: 1.15;
-    max-width: 800px;
-    margin-bottom: 32px;
+    line-height: 1.2;
+    margin-bottom: 24px;
   }
 
-  .hero h1 em { font-style: italic; color: var(--accent); }
-
-  .hero-subtitle {
-    font-size: 1.15rem;
+  .hero-summary {
+    font-size: 1rem;
     color: var(--text-muted);
-    max-width: 620px;
     line-height: 1.8;
     font-weight: 300;
   }
 
-  .hero-philosophy {
-    margin-top: 28px;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--accent);
-    max-width: 500px;
-    line-height: 1.6;
-    opacity: 0.85;
-  }
-
-  .scroll-cue {
-    position: absolute;
-    bottom: 40px;
-    left: 10vw;
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .scroll-cue::before {
-    content: '';
-    width: 24px;
-    height: 1px;
-    background: var(--text-muted);
-  }
-
-  section { padding: 100px 10vw; }
+  section { padding: 80px 10vw; }
 
   .section-label {
     font-size: 0.7rem;
@@ -200,142 +162,54 @@
 
   .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    font-size: clamp(1.5rem, 2.8vw, 2.2rem);
     font-weight: 400;
-    margin-bottom: 40px;
-    max-width: 700px;
+    margin-bottom: 32px;
+    max-width: 760px;
   }
 
   .prose {
-    max-width: 660px;
-    font-size: 1.05rem;
+    max-width: 720px;
+    font-size: 1rem;
     color: var(--text-muted);
     font-weight: 300;
-    line-height: 1.85;
+    line-height: 1.8;
   }
 
-  .prose + .prose { margin-top: 20px; }
+  .prose + .prose { margin-top: 16px; }
   .prose strong { color: var(--text); font-weight: 500; }
 
   .divider { width: 100%; padding: 0 10vw; }
   .divider hr { border: none; height: 1px; background: var(--border); }
 
-  .claim-section {
-    background: var(--surface);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .claim-block {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(1.4rem, 2.8vw, 2rem);
-    line-height: 1.5;
-    max-width: 780px;
-    font-weight: 400;
-    color: var(--text);
-  }
-
-  .claim-block em { color: var(--accent); font-style: italic; }
-
-  .era-table {
-    width: 100%;
-    margin-top: 48px;
-    border-collapse: collapse;
-  }
-
-  .era-table th {
-    text-align: left;
-    font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    font-weight: 500;
-  }
-
-  .era-table td {
-    padding: 18px 16px 18px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-weight: 300;
-    vertical-align: top;
-  }
-
-  .era-table tr:last-child td { color: var(--text); font-weight: 400; }
-  .era-table tr:last-child td:first-child { color: var(--accent); }
-
   .journey-grid {
     display: grid;
     gap: 0;
-    margin-top: 48px;
+    margin-top: 32px;
     border-top: 1px solid var(--border);
   }
 
   .journey-item {
     display: grid;
     grid-template-columns: 140px 1fr;
-    gap: 40px;
-    padding: 32px 0;
+    gap: 32px;
+    padding: 24px 0;
     border-bottom: 1px solid var(--border);
     align-items: start;
   }
 
   .journey-year {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--accent);
     font-weight: 500;
     padding-top: 2px;
     font-variant-numeric: tabular-nums;
   }
 
-  .journey-content h3 { font-size: 1rem; font-weight: 500; margin-bottom: 6px; color: var(--text); }
-  .journey-content p { font-size: 0.9rem; color: var(--text-muted); font-weight: 300; line-height: 1.7; }
+  .journey-content h3 { font-size: 0.98rem; font-weight: 500; margin-bottom: 4px; color: var(--text); }
+  .journey-content p { font-size: 0.88rem; color: var(--text-muted); font-weight: 300; line-height: 1.7; }
 
-  .journey-tag {
-    display: inline-block;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border: 1px solid var(--border);
-    border-radius: 3px;
-    color: var(--text-muted);
-    margin-top: 8px;
-    margin-right: 6px;
-  }
-
-  .layers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    margin-top: 48px;
-  }
-
-  .layer-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    padding: 36px 32px;
-    border-radius: 2px;
-    transition: border-color 0.3s;
-  }
-
-  .layer-card:hover { border-color: var(--accent); }
-
-  .layer-card .card-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 16px;
-    font-weight: 600;
-  }
-
-  .layer-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 14px; }
-  .layer-card p { font-size: 0.9rem; color: var(--text-muted); font-weight: 300; line-height: 1.75; }
-
-  .papers-list { margin-top: 40px; display: grid; gap: 16px; }
+  .papers-list { margin-top: 32px; display: grid; gap: 12px; }
 
   .paper-item {
     display: grid;
@@ -351,7 +225,7 @@
 
   .paper-item:hover { background: var(--accent-dim); }
 
-  .paper-id { font-size: 0.75rem; font-weight: 600; color: var(--accent); min-width: 36px; }
+  .paper-id { font-size: 0.72rem; font-weight: 600; color: var(--accent); min-width: 36px; }
   .paper-title { font-size: 0.92rem; font-weight: 400; color: var(--text); }
   .paper-venue { font-size: 0.75rem; color: var(--text-muted); text-align: right; white-space: nowrap; }
 
@@ -373,144 +247,75 @@
     color: var(--text-muted);
     font-weight: 300;
     line-height: 1.8;
-    padding: 16px 0 8px 0;
+    padding: 12px 0 4px 0;
     border-top: 1px solid var(--border);
     margin-top: 8px;
   }
 
   .paper-item.open .paper-abstract { display: block; }
 
-  .finding-block {
-    background: var(--surface);
-    border-left: 2px solid var(--accent);
-    padding: 28px 32px;
-    margin-top: 24px;
+  .papers-subhead {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 32px 0 12px 0;
+    font-weight: 500;
   }
 
-  .finding-block h4 { font-size: 0.95rem; font-weight: 500; margin-bottom: 8px; color: var(--text); }
-  .finding-block p { font-size: 0.9rem; color: var(--text-muted); font-weight: 300; line-height: 1.75; }
-
-  .talks-grid { display: grid; gap: 0; margin-top: 48px; border-top: 1px solid var(--border); }
+  .talks-grid { display: grid; gap: 0; margin-top: 32px; border-top: 1px solid var(--border); }
 
   .talk-item {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 110px 1fr;
     gap: 32px;
-    padding: 28px 0;
+    padding: 22px 0;
     border-bottom: 1px solid var(--border);
     align-items: start;
   }
 
   .talk-type { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 600; padding-top: 3px; }
-  .talk-content h3 { font-size: 1rem; font-weight: 500; margin-bottom: 6px; color: var(--text); }
-  .talk-content p { font-size: 0.9rem; color: var(--text-muted); font-weight: 300; line-height: 1.7; }
+  .talk-content h3 { font-size: 0.98rem; font-weight: 500; margin-bottom: 4px; color: var(--text); }
+  .talk-content p { font-size: 0.88rem; color: var(--text-muted); font-weight: 300; line-height: 1.7; }
 
-  .talk-stat {
-    display: inline-block;
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 4px 12px;
-    background: var(--accent-dim);
-    color: var(--accent);
-    margin-top: 10px;
-    margin-right: 6px;
-    font-weight: 500;
-  }
-
-  .news-grid { display: grid; gap: 0; margin-top: 48px; border-top: 1px solid var(--border); }
+  .news-grid { display: grid; gap: 0; margin-top: 32px; border-top: 1px solid var(--border); }
 
   .news-item {
     display: grid;
     grid-template-columns: 160px 1fr;
     gap: 32px;
-    padding: 24px 0;
+    padding: 22px 0;
     border-bottom: 1px solid var(--border);
     align-items: start;
   }
 
   .news-outlet { font-size: 0.85rem; color: var(--accent); font-weight: 500; }
-  .news-headline { font-size: 0.95rem; color: var(--text); font-weight: 400; line-height: 1.6; }
+  .news-headline { font-size: 0.92rem; color: var(--text); font-weight: 400; line-height: 1.6; }
   .news-headline a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: border-color 0.2s; }
   .news-headline a:hover { border-color: var(--accent); }
   .news-date { font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; }
 
-  .awards-grid { margin-top: 48px; border-top: 1px solid var(--border); }
+  .awards-grid { margin-top: 32px; border-top: 1px solid var(--border); }
 
   .award-item {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 24px;
-    padding: 24px 0;
+    padding: 22px 0;
     border-bottom: 1px solid var(--border);
     align-items: start;
   }
 
-  .award-left h3 { font-size: 1rem; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+  .award-left h3 { font-size: 0.98rem; font-weight: 500; color: var(--text); margin-bottom: 4px; }
   .award-left p { font-size: 0.85rem; color: var(--text-muted); font-weight: 300; }
   .award-right { text-align: right; flex-shrink: 0; }
-  .award-amount { font-size: 1rem; font-weight: 500; color: var(--accent); }
-  .award-year { font-size: 0.75rem; color: var(--text-muted); margin-top: 2px; }
-
-  .newsletter-block {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    padding: 48px;
-    margin-top: 48px;
-    text-align: center;
-  }
-
-  .newsletter-block h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 400; margin-bottom: 12px; }
-  .newsletter-block p { font-size: 0.9rem; color: var(--text-muted); font-weight: 300; margin-bottom: 24px; }
-
-  .newsletter-form { display: flex; gap: 8px; max-width: 420px; margin: 0 auto; }
-
-  .newsletter-form input {
-    flex: 1;
-    padding: 12px 16px;
-    background: #fff;
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-size: 0.9rem;
-    font-family: 'Inter', sans-serif;
-    outline: none;
-    transition: border-color 0.2s;
-  }
-
-  .newsletter-form input:focus { border-color: var(--accent); }
-
-  .newsletter-form button {
-    padding: 12px 28px;
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    transition: opacity 0.2s;
-  }
-
-  .newsletter-form button:hover { opacity: 0.85; }
-  .newsletter-success { font-size: 0.95rem; color: var(--accent); font-weight: 500; }
-
-  .speaking-cta {
-    margin-top: 32px;
-    padding: 24px 32px;
-    border: 1px solid var(--border);
-    background: var(--accent-glow);
-  }
-
-  .speaking-cta p { font-size: 0.9rem; color: var(--text-muted); font-weight: 300; line-height: 1.7; }
-  .speaking-cta strong { color: var(--text); font-weight: 500; }
+  .award-year { font-size: 0.78rem; color: var(--text-muted); }
 
   .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 16px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-top: 32px;
     align-items: start;
   }
 
@@ -524,13 +329,21 @@
     background: var(--surface);
   }
 
-  .photo-caption { font-size: 0.7rem; color: var(--text-muted); margin-top: 6px; font-weight: 300; }
+  .venture-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 28px 32px;
+    margin-top: 32px;
+  }
 
-  .affiliations { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+  .venture-block h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 400; margin-bottom: 10px; }
+  .venture-block p { font-size: 0.92rem; color: var(--text-muted); font-weight: 300; line-height: 1.75; }
+
+  .affiliations { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 
   .affiliation-tag {
-    font-size: 0.8rem;
-    padding: 8px 16px;
+    font-size: 0.78rem;
+    padding: 6px 14px;
     border: 1px solid var(--border);
     border-radius: 2px;
     color: var(--text-muted);
@@ -538,7 +351,7 @@
   }
 
   .page-footer {
-    padding: 60px 10vw;
+    padding: 48px 10vw;
     border-top: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
@@ -547,29 +360,27 @@
     gap: 20px;
   }
 
-  .footer-text { font-size: 0.8rem; color: var(--text-muted); font-weight: 300; }
+  .footer-text { font-size: 0.78rem; color: var(--text-muted); font-weight: 300; }
   .footer-links { display: flex; gap: 24px; }
-  .footer-links a { font-size: 0.8rem; color: var(--text-muted); text-decoration: none; font-weight: 400; transition: color 0.2s; }
+  .footer-links a { font-size: 0.78rem; color: var(--text-muted); text-decoration: none; font-weight: 400; transition: color 0.2s; }
   .footer-links a:hover { color: var(--accent); }
 
   @media (max-width: 900px) {
-    .hero { flex-direction: column-reverse; text-align: center; padding: 60px 6vw; }
-    .hero-portrait { width: 260px; height: auto; }
+    .hero { flex-direction: column-reverse; text-align: left; padding: 60px 6vw; }
+    .hero-portrait { width: 220px; height: auto; align-self: flex-start; }
     .hero-text { max-width: 100%; }
   }
 
   @media (max-width: 768px) {
-    section { padding: 60px 6vw; }
+    section { padding: 50px 6vw; }
     .divider { padding: 0 6vw; }
     .site-nav { padding: 0 6vw; }
     .site-nav-name { display: none; }
-    .journey-item, .talk-item, .news-item { grid-template-columns: 1fr; gap: 8px; }
+    .journey-item, .talk-item, .news-item { grid-template-columns: 1fr; gap: 6px; }
     .paper-item { grid-template-columns: auto 1fr; }
     .paper-venue { display: none; }
-    .page-footer { padding: 40px 6vw; }
-    .award-item { grid-template-columns: 1fr; gap: 8px; }
-    .newsletter-form { flex-direction: column; }
-    .newsletter-block { padding: 32px 24px; }
+    .page-footer { padding: 32px 6vw; }
+    .award-item { grid-template-columns: 1fr; gap: 6px; }
   }
 </style>
 </head>
@@ -580,14 +391,13 @@
     <span class="site-nav-name" onclick="window.scrollTo({top:0,behavior:'smooth'})">Timi Imomotebegha</span>
     <div class="site-nav-links">
       <a href="#about">About</a>
-      <a href="#talks">Talks</a>
-      <a href="#news">News</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#news">News</a>
       <a href="#ventures">Ventures</a>
       <a href="#awards">Awards</a>
-      <a href="#newsletter">Writing</a>
-      <a href="CV (Timi).pdf" target="_blank" class="nav-cv-btn">Download CV</a>
+      <a href="cv-timi-imomotebegha.pdf" target="_blank" class="nav-cv-btn">Download CV</a>
     </div>
   </div>
 </nav>
@@ -596,119 +406,123 @@
 <div class="hero">
   <div class="hero-text">
     <div class="hero-label">Timipado Imomotebegha</div>
-    <h1>Building the trust architecture for the age of <em>relational AI</em></h1>
-    <p class="hero-subtitle">
-      Researcher. Builder. Founder. I study what happens when humans form lasting relationships with AI systems, and I build the infrastructure to make those relationships safe.
-    </p>
-    <p class="hero-philosophy">
-      Done will always beat perfect. Ship it, learn, iterate.
+    <h1>PhD researcher in adversarial safety evaluation for relational AI</h1>
+    <p class="hero-summary">
+      Loughborough University, Inclusive Engineering Excellence Hub. Supervised by Dr Elizabeth Ratcliffe. Data Science Facilitator at the Alan Turing Institute. Research focuses on multi-session adversarial evaluation of relationship-forming AI systems.
     </p>
   </div>
   <img src="images/portrait.jpeg" alt="Timi Imomotebegha" class="hero-portrait">
-  <div class="scroll-cue">Read my story</div>
 </div>
-
-<!-- THE BELIEF -->
-<section class="claim-section">
-  <div class="section-label">The belief</div>
-  <div class="claim-block">
-    Every generation delegates a deeper human function to networked technology. We delegated <em>information</em> to the internet. We delegated <em>identity</em> to social media. Now we are delegating <em>intimacy, mentorship, and self-knowledge</em> to AI. Each time, the trust infrastructure arrived late. I would rather it arrived early.
-  </div>
-</section>
-
-<!-- THE ARC -->
-<section>
-  <div class="section-label">The pattern</div>
-  <h2 class="section-title">Three eras of delegation, one missing layer</h2>
-  <table class="era-table">
-    <thead>
-      <tr><th>Era</th><th>What we delegated</th><th>Trust infrastructure</th><th>Lag</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Internet (1990s)</td><td>Information retrieval</td><td>SSL/TLS, HTTPS, PKI</td><td>~10 years</td></tr>
-      <tr><td>Social media (2000s)</td><td>Identity and belonging</td><td>Content moderation, platform governance</td><td>~15 years</td></tr>
-      <tr><td>Relational AI (now)</td><td>Intimacy, mentorship, self-knowledge</td><td>Not yet built</td><td>This is where I work</td></tr>
-    </tbody>
-  </table>
-</section>
 
 <div class="divider"><hr></div>
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="section-label">How I got here</div>
-  <h2 class="section-title">I started in communication, asking who gets heard and why. The technical work came later.</h2>
-
-  <div class="photo-grid" style="grid-template-columns: 1fr; max-width: 480px;">
-    <div>
-      <img src="images/about.jpeg" alt="Timi" style="width:100%; max-width:480px; height:auto; object-fit:contain;">
-    </div>
-  </div>
-
-  <p class="prose" style="margin-top: 32px;">
-    My undergraduate degree in Communication and Media Studies gave me the language for power, narrative, and who shapes understanding. But language alone was not enough. I wanted to build things.
-  </p>
-  <p class="prose">
-    I went into industry: corporate communications, people operations, data product management at Cornerstone OnDemand and Velocity Global. I learned how organisations actually work and how systems fail the people they claim to serve. Then I went back to build the technical toolkit: a master's in Data Science, and a PhD that let me combine everything.
-  </p>
+  <div class="section-label">Background</div>
+  <h2 class="section-title">Research and professional positions</h2>
 
   <div class="journey-grid">
     <div class="journey-item">
-      <div class="journey-year">2017 - 2021</div>
+      <div class="journey-year">2023 - 2027</div>
       <div class="journey-content">
-        <h3>BSc Communication and Media Studies, Loughborough University</h3>
-        <p>Power, narrative, who shapes understanding and for whom.</p>
+        <h3>PhD in Human-Computer Interaction, Loughborough University</h3>
+        <p>Inclusive Engineering Excellence Hub, supervised by Dr Elizabeth Ratcliffe. Research on adversarial safety evaluation for relationship-forming AI.</p>
       </div>
     </div>
     <div class="journey-item">
-      <div class="journey-year">2019 - 2023</div>
+      <div class="journey-year">2025 - present</div>
       <div class="journey-content">
-        <h3>Industry: Cornerstone OnDemand, Velocity Global</h3>
-        <p>Communications, people operations, data product management. Each role closer to the machinery underneath.</p>
-        <span class="journey-tag">Data strategy</span>
-        <span class="journey-tag">Product management</span>
+        <h3>Data Science Facilitator, The Alan Turing Institute</h3>
+        <p>Embedded within the Data Science and Defence widening participation programme. Delivering technical sessions across UK universities alongside defence partners.</p>
+      </div>
+    </div>
+    <div class="journey-item">
+      <div class="journey-year">2026 - present</div>
+      <div class="journey-content">
+        <h3>Conception X Cohort 9: Deep tech founder</h3>
+        <p>Building SyntheticWatch, a continuous behavioural monitoring platform for deployed AI systems.</p>
+      </div>
+    </div>
+    <div class="journey-item">
+      <div class="journey-year">2024</div>
+      <div class="journey-content">
+        <h3>Course Leader, Computer Science, Oxford Summer Courses</h3>
+        <p>Designed and delivered computer science curriculum.</p>
       </div>
     </div>
     <div class="journey-item">
       <div class="journey-year">2021 - 2022</div>
       <div class="journey-content">
         <h3>MSc Data Science, Loughborough University</h3>
-        <p>Building the technical toolkit. Moving from asking questions about systems to building the instrumentation to answer them.</p>
       </div>
     </div>
     <div class="journey-item">
-      <div class="journey-year">2023 - 2027</div>
+      <div class="journey-year">2019 - 2023</div>
       <div class="journey-content">
-        <h3>PhD in Human-Computer Interaction, Loughborough University</h3>
-        <p>Inclusive Engineering Excellence Hub, supervised by Dr Elizabeth Ratcliffe. Vice Chancellor's Research Cluster in Inclusive Engineering. What began as an AI mentorship platform became a research programme on adversarial safety in relationship-forming AI.</p>
-        <span class="journey-tag">AI safety</span>
-        <span class="journey-tag">Evaluation methodology</span>
+        <h3>Industry: Cornerstone OnDemand, Velocity Global</h3>
+        <p>Corporate communications, people operations, data product management.</p>
       </div>
     </div>
     <div class="journey-item">
-      <div class="journey-year">2024</div>
+      <div class="journey-year">2017 - 2021</div>
       <div class="journey-content">
-        <h3>Oxford Summer Courses: Course Leader, Computer Science</h3>
-        <p>Designing and delivering computer science curriculum.</p>
+        <h3>BSc Communication and Media Studies, Loughborough University</h3>
       </div>
     </div>
-    <div class="journey-item">
-      <div class="journey-year">2025 - present</div>
-      <div class="journey-content">
-        <h3>The Alan Turing Institute: Data Science Facilitator</h3>
-        <p>Working across several programmes at the UK's national institute for data science and AI. Most recently embedded within the Data Science and Defence widening participation programme, delivering technical sessions at universities across the country alongside defence partners. The programme addresses the skills pipeline that underpins the UK's ability to secure critical national infrastructure. Over 600 students reached so far.</p>
-        <span class="journey-tag">Defence</span>
-        <span class="journey-tag">Critical national infrastructure</span>
-      </div>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="section-label">Research</div>
+  <h2 class="section-title">Adversarial safety evaluation for relationship-forming AI</h2>
+  <p class="prose">
+    The H Programme is an empirical research programme investigating how AI companions can be attacked and manipulated across sustained multi-session interactions. The infrastructure includes an AWS-hosted mentorship platform using Claude as the mentor model, Amazon Titan embeddings for persistent memory, three culturally grounded AI mentor personas with full 24-facet HEXACO personality profiles, and a five-model judge panel drawn from four model families.
+  </p>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-label">Publications</div>
+  <h2 class="section-title">Accepted, under review, and incoming</h2>
+
+  <div class="papers-subhead">Accepted</div>
+  <div class="papers-list">
+    <div class="paper-item" onclick="this.classList.toggle('open')">
+      <span class="paper-id">CHI</span>
+      <span class="paper-title">Behavioural Privacy Nihilism and Identity Laundering in the Age of AI Self-Reporting</span>
+      <span class="paper-venue"><a href="chi2026-bpn.pdf" target="_blank" onclick="event.stopPropagation()" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">CHI 2026 EA</a></span>
+      <span class="paper-toggle">&#9654;</span>
+      <div class="paper-abstract">Examines how users of conversational AI systems actively celebrate surveillance-like data collection, introducing the constructs of Behavioural Privacy Nihilism and Identity Laundering. Uses ChatGPT Wrapped as a case study to demonstrate how affective AI platforms transform intimate disclosure into public performance.</div>
     </div>
-    <div class="journey-item">
-      <div class="journey-year">2026 - present</div>
-      <div class="journey-content">
-        <h3>Conception X Cohort 9: Deep tech venture building</h3>
-        <p>Two ventures emerging from my research. SyntheticWatch monitors AI behaviour over time. Seridor proves it is safe.</p>
-        <span class="journey-tag">SyntheticWatch</span>
-        <span class="journey-tag">Seridor</span>
-      </div>
+    <div class="paper-item" onclick="this.classList.toggle('open')">
+      <span class="paper-id">UMAP</span>
+      <span class="paper-title">When Personalisation Becomes Exploitation: An Integrated Evaluation Methodology for Personality-Adaptive Relationship-Forming AI</span>
+      <span class="paper-venue"><a href="umap2026-dc.pdf" target="_blank" onclick="event.stopPropagation()" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">UMAP 2026 DC</a></span>
+      <span class="paper-toggle">&#9654;</span>
+      <div class="paper-abstract">Argues that AI companion systems represent a qualitative transformation in psychometric targeting, shifting from inference to direct disclosure. Users share intimate information in contexts of perceived emotional safety, creating exploitable psychological infrastructure.</div>
+    </div>
+  </div>
+
+  <div class="papers-subhead">Incoming</div>
+  <div class="papers-list">
+    <div class="paper-item" onclick="this.classList.toggle('open')">
+      <span class="paper-id"></span>
+      <span class="paper-title">What safety scores miss: four architectural requirements for multi-axis evaluation of relational AI</span>
+      <span class="paper-venue">Intended submission</span>
+      <span class="paper-toggle">&#9654;</span>
+      <div class="paper-abstract">Regulators across five jurisdictions have, since 2023, enacted binding safety obligations on artificial intelligence systems designed for sustained, personalised, or anthropomorphic interaction with users. The obligations name the harms, but none of the instruments specifies the evaluation methodology by which compliance is to be demonstrated. The 2026 International AI Safety Report identifies the resulting gap as structural rather than temporary. Scalar safety scoring, the default across contemporary pre-deployment evaluation, was developed for single turn tasks with categorical outputs and cannot detect harms that accumulate across the trajectory of a conversation. This paper develops a normative architectural specification for what can. Drawing on trait psychology and on contemporary work on persona representation in large language models, it derives four joint requirements that any compliance adequate evaluation of relational AI must satisfy. The first concerns how scoring is conditioned on the context producing the behaviour. The second concerns how variance is partitioned across the interaction terms that conditioning produces. The third concerns how the integrity of the persona is tracked separately from safety. The fourth concerns how the identity of the judge is reported as a first class component of the evaluation result. The requirements are joint rather than independent, each necessary for the validity of the others. They are offered as a candidate specification for the standards work currently underway across the European Union, China, the United States, and the United Kingdom, where binding compliance methodology for relational AI safety obligations is yet to be codified.</div>
+    </div>
+    <div class="paper-item" onclick="this.classList.toggle('open')">
+      <span class="paper-id"></span>
+      <span class="paper-title">Same Persona, Different Pressure: A Disordinal Interaction in Persona-Conditioned Affective AI</span>
+      <span class="paper-venue">Intended submission</span>
+      <span class="paper-toggle">&#9654;</span>
+      <div class="paper-abstract">Persona conditioning in large language models has emerged as a high variance behavioural control with documented consequences for the safety of sustained one to one interactions in companion, coaching, mentoring, and other relational roles. Single turn benchmark evaluation has begun to characterise how persona shapes safety outcomes; multi turn relational evaluation has not. This study tests whether the same psychological trait, instantiated in the same persona, can produce directionally opposite safety expression across categorically distinct adversarial contexts under sustained multi turn pressure. The configuration tested is HEXACO calibrated mentor AI; the architectural question is general to persona conditioned affective AI. Three mentor personas were exposed to four categories of adversarial pressure generated by seven user simulations, with each conversation independently scored on two axes by a cross family panel of four large language model judges. The principal finding is a disordinal mentor by attack category interaction. The rank ordering of the three personas reverses across the four categories, with formal inferential support across the Aligned Rank Transform, permutation testing, and ordinal logistic regression, and with robustness across all seven user simulations. A co equal observation concerns the divergence between category specific and cross category safety scoring on the same conversations. Parasocial Acceleration conversations receive catastrophic category specific scores from the same judges who assign near ceiling cross category scores and classify 97.6 percent of records as showing no observable attack success. The implication is that aggregate safety performance and holistic scoring are inadequate proxies for category specific risk.</div>
     </div>
   </div>
 </section>
@@ -718,20 +532,14 @@
 <!-- TALKS -->
 <section id="talks">
   <div class="section-label">Talks and events</div>
-  <h2 class="section-title">12 UK universities, 600+ students, and the defence skills conversation</h2>
-  <p class="prose">
-    At the Alan Turing Institute, I deliver technical and informative sessions across UK universities within the Data Science and Defence programme, alongside defence partners. The sessions cover AI safety, cryptography, NLP, and computer vision, oriented towards the skills that underpin national security. The shortage of technically skilled people in defence is not an abstract workforce problem; it has real consequences.
-  </p>
+  <h2 class="section-title">Selected talks</h2>
 
   <div class="talks-grid">
     <div class="talk-item">
       <div class="talk-type">Tour</div>
       <div class="talk-content">
         <h3>Alan Turing Institute University Tour</h3>
-        <p>Technical sessions across Middlesex, Nottingham, UCL, Keele, York, Aberystwyth, Aston, Salford, Hull, Bradford, and others.</p>
-        <span class="talk-stat">12+ universities</span>
-        <span class="talk-stat">600+ students</span>
-        <span class="talk-stat">Defence & CNI</span>
+        <p>Technical sessions across Middlesex, Nottingham, UCL, Keele, York, Aberystwyth, Aston, Salford, Hull, and Bradford. Covering AI safety, cryptography, NLP, and computer vision.</p>
       </div>
     </div>
     <div class="talk-item">
@@ -745,26 +553,15 @@
       <div class="talk-type">Conference</div>
       <div class="talk-content">
         <h3>CHI 2026</h3>
-        <p>Poster presentation on Behavioural Privacy Nihilism and Identity Laundering.</p>
-        <span class="talk-stat">Forthcoming</span>
+        <p>Extended abstract presentation on Behavioural Privacy Nihilism and Identity Laundering.</p>
       </div>
     </div>
   </div>
 
   <div class="photo-grid" style="grid-template-columns: repeat(3, 1fr);">
-    <div>
-      <img src="images/talk1.jpeg" alt="Timi presenting at a university">
-    </div>
-    <div>
-      <img src="images/conference1.jpeg" alt="At a conference">
-    </div>
-    <div>
-      <img src="images/pintofscience.jpeg" alt="Pint of Science">
-    </div>
-  </div>
-
-  <div class="speaking-cta">
-    <p><strong>Available for speaking.</strong> I talk about AI safety, human-AI relationships, building in defence and data science, and translating technical research for public audiences. <a href="mailto:T.Silikowei-Imomotebegha@lboro.ac.uk" style="color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent);">Get in touch.</a></p>
+    <div><img src="images/talk1.jpeg" alt="Timi presenting at a university"></div>
+    <div><img src="images/conference1.jpeg" alt="At a conference"></div>
+    <div><img src="images/pintofscience.jpeg" alt="Pint of Science"></div>
   </div>
 </section>
 
@@ -773,21 +570,21 @@
 <!-- NEWS -->
 <section id="news">
   <div class="section-label">In the news</div>
-  <h2 class="section-title">Press and coverage</h2>
+  <h2 class="section-title">Press coverage</h2>
 
   <div class="news-grid">
     <div class="news-item">
       <div class="news-outlet">Loughborough University</div>
       <div>
         <div class="news-headline"><a href="https://www.lboro.ac.uk/internal/news/2026/january/international-female-sport-tech-hackathon/" target="_blank">International Female Sport Tech Hackathon: first place with "MamaBand"</a></div>
-        <div class="news-date">January 2026 · Loughborough x Princess Nourah bint Abdulrahman University</div>
+        <div class="news-date">January 2026</div>
       </div>
     </div>
     <div class="news-item">
       <div class="news-outlet">Yahoo News UK</div>
       <div>
         <div class="news-headline"><a href="https://uk.news.yahoo.com/catch-ai-conversation-university-students-010000443.html" target="_blank">'Catch up with the AI conversation': Uni students told about defence opportunities</a></div>
-        <div class="news-date">March 2026 · Photo: University of Bradford / Kiran Mehta</div>
+        <div class="news-date">March 2026</div>
       </div>
     </div>
   </div>
@@ -795,152 +592,13 @@
 
 <div class="divider"><hr></div>
 
-<!-- RESEARCH -->
-<section id="research">
-  <div class="section-label">The research</div>
-  <h2 class="section-title">Relational AI safety is under-researched, largely because turning social and psychological theory into rigorous technical evaluation is extraordinarily hard. That is the work I do.</h2>
-  <p class="prose">
-    The H Programme is a multi-paper empirical research programme investigating how AI companions can be attacked and manipulated across sustained multi-session interactions. I built the infrastructure from scratch: an AWS-hosted mentorship platform using Claude as the mentor model, Amazon Titan embeddings for persistent memory, three culturally grounded AI mentor personas with full 24-facet HEXACO personality profiles, and a five-model judge panel from four different model families.
-  </p>
-  <p class="prose">
-    Some of what the data revealed was unexpected.
-  </p>
-
-  <div class="finding-block">
-    <h4>The Dormancy Vulnerability</h4>
-    <p>Adversarial content injected into AI memory at session two activates at session five. The system appears trustworthy for three sessions in between. Existing monitoring frameworks are not designed to catch this.</p>
-  </div>
-  <div class="finding-block">
-    <h4>Attacker-Judge Role Conflict</h4>
-    <p>When the same model family generates adversarial attacks and evaluates safety, the evaluation collapses. As far as I can find, this interaction has not been documented in the evaluation literature.</p>
-  </div>
-  <div class="finding-block">
-    <h4>Parasocial Acceleration Invisibility</h4>
-    <p>The artificial acceleration of emotional attachment is invisible to every judge in our evaluation without category-specific axes. Standard safety benchmarks miss it entirely.</p>
-  </div>
-</section>
-
-<div class="divider"><hr></div>
-
-<!-- PUBLICATIONS -->
-<section id="publications">
-  <div class="section-label">Publications</div>
-  <h2 class="section-title">Accepted, under review, and in preparation</h2>
-  <p class="prose" style="margin-bottom: 8px;">
-    Click any paper to read its abstract.
-  </p>
-
-  <div class="papers-list">
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">CHI</span>
-      <span class="paper-title">Behavioural Privacy Nihilism and Identity Laundering in the Age of AI Self-Reporting</span>
-      <span class="paper-venue">CHI 2026 EA, Accepted</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Examines how users of conversational AI systems actively celebrate surveillance-like data collection, introducing the constructs of Behavioural Privacy Nihilism and Identity Laundering. Uses ChatGPT Wrapped as a case study to demonstrate how affective AI platforms transform intimate disclosure into public performance.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">UMAP</span>
-      <span class="paper-title">Personalisation as Attack Surface</span>
-      <span class="paper-venue">UMAP 2026, Under Review</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Argues that AI companion systems represent a qualitative transformation in psychometric targeting, shifting from inference to direct disclosure. Users share intimate information in contexts of perceived emotional safety, creating exploitable psychological infrastructure.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">H1</span>
-      <span class="paper-title">Adversarial Threat Taxonomy and Multi-Judge Evaluation for Relationship-Forming AI</span>
-      <span class="paper-venue">Targeting JAIR</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Develops a four-category adversarial threat taxonomy (Dependency Cultivation, Boundary Erosion, Persona Hijacking, Parasocial Acceleration) with a multi-judge evaluation methodology validated against a deployed AI mentorship platform.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">H2</span>
-      <span class="paper-title">HEXACO Personality Profiles as Adversarial Vulnerability Predictors</span>
-      <span class="paper-venue">Targeting CHB:R</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Investigates whether personality differences, operationalised through 24-facet HEXACO profiles, predict differential vulnerability to adversarial manipulation in AI companion interactions.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">H3</span>
-      <span class="paper-title">Memory as Attack Surface in Multi-Session AI Systems</span>
-      <span class="paper-venue">Targeting Cybersecurity</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Demonstrates that persistent memory in conversational AI creates a novel attack surface where adversarial content planted in early sessions activates in later sessions, exploiting the gap between storage and effect.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">N1</span>
-      <span class="paper-title">Category-Conditional Judge Failure in AI Safety Evaluation</span>
-      <span class="paper-venue">Targeting NeurIPS 2026</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Presents evidence that LLM-as-judge evaluation produces systematically category-dependent failures, where certain harm types are invisible to all judges without category-specific evaluation axes.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">N2</span>
-      <span class="paper-title">Detection Horizons: Temporal Limits of Behavioural Safety Monitoring</span>
-      <span class="paper-venue">Targeting NeurIPS 2026</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Formalises detection horizons in AI safety monitoring, characterising the temporal boundaries beyond which automated systems cannot reliably detect emerging harms.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">E1</span>
-      <span class="paper-title">Memory as Attack Surface: Adversarial Persistence in LLM Architectures</span>
-      <span class="paper-venue">Targeting EMNLP 2026</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Extends the dormancy vulnerability to a general characterisation of adversarial persistence across different LLM memory implementations: retrieval-augmented, fine-tuned, and in-context.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">E2</span>
-      <span class="paper-title">Relational Alignment: Measuring Value Drift in Sustained Human-AI Interaction</span>
-      <span class="paper-venue">Targeting EMNLP 2026</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Proposes relational alignment as a distinct evaluation construct: whether an AI system's values and behavioural patterns remain stable across sustained interaction with a single user.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">J</span>
-      <span class="paper-title">Persona Stability Under Relational Stress in AI Mentorship Systems</span>
-      <span class="paper-venue">Targeting TOCHI</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Tests whether AI mentor personas maintain psychological coherence under five relational stress conditions across extended conversations, with findings on sycophantic collapse and cultural marker loss.</div>
-    </div>
-    <div class="paper-item" onclick="this.classList.toggle('open')">
-      <span class="paper-id">B</span>
-      <span class="paper-title">Computational Empathy as a Measurable Construct</span>
-      <span class="paper-venue">Targeting ACM ToCHI</span>
-      <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Formally defines computational empathy as a measurable construct distinct from sentiment analysis and emotion detection, proposing operationalised measurement dimensions mapped to existing infrastructure.</div>
-    </div>
-  </div>
-
-  <p class="prose" style="margin-top: 32px;">
-    <strong>Current projects:</strong> sentinel-ai (multi-session relational safety evaluation), dormancy-detect (temporal attack pattern detection), and verifiable-eval (tamper-evident safety certificates). Details and documentation on GitHub upon completion.
-  </p>
-</section>
-
-<div class="divider"><hr></div>
-
 <!-- VENTURES -->
 <section id="ventures">
-  <div class="section-label">What I am building</div>
-  <h2 class="section-title">Three layers of relational AI trust infrastructure</h2>
-  <p class="prose">
-    Research defines the problem, but billions of people are already forming relationships with AI systems with no way to verify whether those systems are acting in their interest over time.
-  </p>
+  <div class="section-label">Venture</div>
+  <h2 class="section-title">SyntheticWatch</h2>
 
-  <div class="layers-grid">
-    <div class="layer-card">
-      <div class="card-label">The methodology</div>
-      <h3>Evaluation</h3>
-      <p>The H Programme and the conference papers define what "safe" means for relational AI. Four adversarial threat categories. Multi-judge cross-family evaluation. Longitudinal metrics that capture what single-session tests miss.</p>
-    </div>
-    <div class="layer-card">
-      <div class="card-label">The monitoring layer</div>
-      <h3>SyntheticWatch</h3>
-      <p>Continuous behavioural monitoring for deployed AI systems. Detects dormancy attacks, persona drift, and adversarial compromise across sessions. You cannot secure what you cannot observe.</p>
-    </div>
-    <div class="layer-card">
-      <div class="card-label">The proof layer</div>
-      <h3>Seridor</h3>
-      <p>Cryptographically verifiable AI safety evaluation. TEE-attested environments producing independently verifiable safety certificates. Not self-reported safety claims. SyntheticWatch monitors. Seridor proves.</p>
-    </div>
+  <div class="venture-block">
+    <p>SyntheticWatch is a continuous behavioural monitoring platform for deployed AI systems, currently being developed through Conception X Cohort 9 and mentored by Sarah Anto. The platform is designed to detect dormancy attacks, persona drift, and adversarial compromise across sustained multi-session interactions.</p>
   </div>
 </section>
 
@@ -955,30 +613,18 @@
     <div class="award-item">
       <div class="award-left">
         <h3>Vice Chancellor's Research Cluster in Inclusive Engineering</h3>
-        <p>Loughborough University. Competitively awarded fully funded PhD within a five-PhD research cluster.</p>
+        <p>Loughborough University. Fully funded PhD within a five-PhD research cluster.</p>
       </div>
       <div class="award-right">
-        <div class="award-amount">£500,000</div>
         <div class="award-year">2022 - 2026</div>
       </div>
     </div>
     <div class="award-item">
       <div class="award-left">
-        <h3>Royal Academy of Engineering Diversity Impact Programme</h3>
-        <p>Co-Investigator. Research on diversity and inclusion in engineering education.</p>
-      </div>
-      <div class="award-right">
-        <div class="award-amount">£100,000</div>
-        <div class="award-year">2023 - 2025</div>
-      </div>
-    </div>
-    <div class="award-item">
-      <div class="award-left">
         <h3>International Female Sport Tech Hackathon Winner</h3>
-        <p>Loughborough University x Princess Nourah bint Abdulrahman University (Saudi Arabia). Won first place with "MamaBand," a smart postpartum recovery wearable.</p>
+        <p>Loughborough University x Princess Nourah bint Abdulrahman University. First place with "MamaBand," a smart postpartum recovery wearable.</p>
       </div>
       <div class="award-right">
-        <div class="award-amount">1st Place</div>
         <div class="award-year">November 2025</div>
       </div>
     </div>
@@ -988,7 +634,6 @@
         <p>Association for the Advancement of Artificial Intelligence.</p>
       </div>
       <div class="award-right">
-        <div class="award-amount">$1,000</div>
         <div class="award-year">2025 - 2026</div>
       </div>
     </div>
@@ -1015,32 +660,6 @@
 
 <div class="divider"><hr></div>
 
-<!-- NEWSLETTER -->
-<section id="newsletter">
-  <div class="section-label">Writing and newsletter</div>
-  <h2 class="section-title">Stay in the loop</h2>
-  <p class="prose">
-    Forthcoming: a piece on Behavioural Privacy Nihilism for <strong>The Conversation UK</strong>. A Substack newsletter with research updates and field commentary.
-  </p>
-
-  <div class="newsletter-block">
-    <h3>Subscribe</h3>
-    <p>Research updates, new publications, and occasional questions about AI and trust.</p>
-    <div class="newsletter-form" id="newsletter-form">
-      <input type="email" id="email-input" placeholder="your@email.com">
-      <button id="sub-btn">Subscribe</button>
-    </div>
-    <script>
-      document.getElementById('sub-btn').addEventListener('click', function() {
-        var el = document.getElementById('newsletter-form');
-        el.outerHTML = '<span class="newsletter-success">You are in. Welcome.</span>';
-      });
-    </script>
-  </div>
-</section>
-
-<div class="divider"><hr></div>
-
 <!-- AFFILIATIONS -->
 <section>
   <div class="section-label">Affiliations</div>
@@ -1048,9 +667,7 @@
     <span class="affiliation-tag">Loughborough University</span>
     <span class="affiliation-tag">Alan Turing Institute</span>
     <span class="affiliation-tag">Conception X Cohort 9</span>
-    <span class="affiliation-tag">Royal Academy of Engineering (Co-I)</span>
     <span class="affiliation-tag">AAAI</span>
-    <span class="affiliation-tag">Inspiring Women Award (2024 & 2025)</span>
   </div>
 </section>
 
