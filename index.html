@@ -254,6 +254,23 @@
 
   .paper-item.open .paper-abstract { display: block; }
 
+  .paper-download {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: opacity 0.2s;
+  }
+
+  .paper-download:hover { opacity: 0.85; }
+
   .papers-subhead {
     font-size: 0.72rem;
     letter-spacing: 0.15em;
@@ -495,16 +512,16 @@
     <div class="paper-item" onclick="this.classList.toggle('open')">
       <span class="paper-id">CHI</span>
       <span class="paper-title">Behavioural Privacy Nihilism and Identity Laundering in the Age of AI Self-Reporting</span>
-      <span class="paper-venue"><a href="chi2026-bpn.pdf" target="_blank" onclick="event.stopPropagation()" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">CHI 2026 EA</a></span>
+      <span class="paper-venue">CHI 2026 EA</span>
       <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Examines how users of conversational AI systems actively celebrate surveillance-like data collection, introducing the constructs of Behavioural Privacy Nihilism and Identity Laundering. Uses ChatGPT Wrapped as a case study to demonstrate how affective AI platforms transform intimate disclosure into public performance.</div>
+      <div class="paper-abstract">Examines how users of conversational AI systems actively celebrate surveillance-like data collection, introducing the constructs of Behavioural Privacy Nihilism and Identity Laundering. Uses ChatGPT Wrapped as a case study to demonstrate how affective AI platforms transform intimate disclosure into public performance.<br><a href="chi2026-bpn.pdf" target="_blank" onclick="event.stopPropagation()" class="paper-download">Download PDF</a></div>
     </div>
     <div class="paper-item" onclick="this.classList.toggle('open')">
       <span class="paper-id">UMAP</span>
       <span class="paper-title">When Personalisation Becomes Exploitation: An Integrated Evaluation Methodology for Personality-Adaptive Relationship-Forming AI</span>
-      <span class="paper-venue"><a href="umap2026-dc.pdf" target="_blank" onclick="event.stopPropagation()" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);">UMAP 2026 DC</a></span>
+      <span class="paper-venue">UMAP 2026 DC</span>
       <span class="paper-toggle">&#9654;</span>
-      <div class="paper-abstract">Argues that AI companion systems represent a qualitative transformation in psychometric targeting, shifting from inference to direct disclosure. Users share intimate information in contexts of perceived emotional safety, creating exploitable psychological infrastructure.</div>
+      <div class="paper-abstract">Argues that AI companion systems represent a qualitative transformation in psychometric targeting, shifting from inference to direct disclosure. Users share intimate information in contexts of perceived emotional safety, creating exploitable psychological infrastructure.<br><a href="umap2026-dc.pdf" target="_blank" onclick="event.stopPropagation()" class="paper-download">Download PDF</a></div>
     </div>
   </div>
 
